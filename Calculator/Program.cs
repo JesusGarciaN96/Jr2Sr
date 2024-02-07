@@ -2,7 +2,8 @@
 {
     class Calculator
     {
-        public static void Main(string[] args) {
+        public static void Main(string[] args)
+        {
             showMenu();
         }
 
@@ -28,18 +29,19 @@
             {
                 Console.WriteLine("Some error is ocurred!");
             }
-    }
+        }
 
-        public static void operatorCalculator(int firstNumber, int secondNumber, char option) {
-            if(option == 'A')
+        public static void operatorCalculator(int firstNumber, int secondNumber, char option)
+        {
+            if (option == 'A')
             {
                 Console.WriteLine("Result: " + (firstNumber + secondNumber));
             }
-            else if(option == 'S')
+            else if (option == 'S')
             {
-                Console.WriteLine("Result: " + (firstNumber - secondNumber)); 
+                Console.WriteLine("Result: " + (firstNumber - secondNumber));
             }
-            else if(option == 'M')
+            else if (option == 'M')
             {
                 Console.WriteLine("Result: " + (firstNumber * secondNumber));
             }
