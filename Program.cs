@@ -1,5 +1,4 @@
-﻿using CursoC_.TODOApp;
-using System;
+﻿using System;
 
 namespace CursoCSharp 
 {
@@ -7,7 +6,6 @@ namespace CursoCSharp
     {
         public static void Main(string[] args)
         {
-            TODO.showMenu();
             Console.ReadKey();
         }
     }

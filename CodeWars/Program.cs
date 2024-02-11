@@ -5,7 +5,7 @@
  * 
  * En caso de que el resultado sea negativo el resultado debe ser 0.
  */
-static int sumaMultiplosTresCinco(int limite)
+int sumaMultiplosTresCinco(int limite)
 {
     int resultado = 0;
     for (int indice = 1; indice < limite; indice++)
@@ -26,7 +26,7 @@ static int sumaMultiplosTresCinco(int limite)
  * Si los dos números son iguales, se debe retornar uno de los
  * dos valores.
  */
-static int sumaEnteros(int primero, int segundo)
+int sumaEnteros(int primero, int segundo)
 {
     if (primero == segundo)
         return primero;
