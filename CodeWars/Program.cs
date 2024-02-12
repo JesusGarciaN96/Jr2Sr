@@ -66,7 +66,15 @@ IEnumerable<int> soloEnterosPositivos(List<object> listaGenerica)
     return enteros;
 }
 
-foreach (var elemento in soloEnterosPositivos(genericos))
+/*
+ * Dado un array de int retornar la suma de valores positivos
+ */
+int sumaSoloeEnteros(int[] enteros)
 {
-    Console.WriteLine(elemento);
+    int resultado = 0;
+    foreach(int numero in enteros)
+        resultado += numero > 0 ? numero : 0;
+    return resultado;
 }
+
+Console.WriteLine(sumaSoloeEnteros([12, 34, -3, 5, -6]));
