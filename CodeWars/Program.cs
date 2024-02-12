@@ -43,4 +43,30 @@ int sumaEnteros(int primero, int segundo)
     }
 }
 
-Console.WriteLine(sumaEnteros(-1, 0));
+/*
+ * Dada una lista de object donde esta contendrá elementos de tipo
+ * string e int (positivos) se deben filtrar solo los valores de tipo int.
+ */
+List<object> genericos = new List<object>() { 1, 2, "a", "b" };
+
+IEnumerable<int> soloEnterosPositivos(List<object> listaGenerica)
+{
+    List<int> enteros = new List<int>();
+    foreach (var elemento in listaGenerica)
+    {
+        if(elemento.GetType() == typeof(int))
+        {
+            int entero = (int)elemento;
+            if(entero >= 0)
+            {
+                enteros.Add(entero);
+            }
+        }
+    }
+    return enteros;
+}
+
+foreach (var elemento in soloEnterosPositivos(genericos))
+{
+    Console.WriteLine(elemento);
+}
